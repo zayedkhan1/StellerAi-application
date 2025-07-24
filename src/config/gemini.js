@@ -1,5 +1,5 @@
 
-const API_KEY = "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";
+const API_KEY = "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";
 const MODEL_NAME = "deepseek/deepseek-r1-0528:free";
 
 async function runChat(prompt) {
