@@ -30,8 +30,7 @@ async function runChat(prompt) {
     const data = await response.json();
 
     const markdownText = data.choices?.[0]?.message?.content || "No response received";
-    console.log(markdownText);
-
+   
     return markdownText;
   } catch (error) {
     console.error("OpenRouter API Error:", error);
