@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets';
 
 
 const Sidebar = () => {
-    const [extended,setExtended]=useState(false);
+    const [extended, setExtended] = useState(false);
     return (
         <div className=' '>
 
@@ -11,35 +11,35 @@ const Sidebar = () => {
 
                 <div>
                     <div>
-                        <img onClick={()=>{setExtended(!extended)}} className='w-[30px] ' src={assets.menu_icon} alt="" />
+                        <img onClick={() => { setExtended(!extended) }} className='w-[30px] ' src={assets.menu_icon} alt="" />
                         <div className='inline-flex items-center text-gray-600 gap-2.5 py-2 px-3 mt-13 mb-3 bg-gray-200 rounded-3xl cursor-pointer'>
                             <img className='w-[20px]' src={assets.plus_icon} alt="" />
-                           {extended ?<p >New Chat</p>:null}  
+                            {extended ? <p >New Chat</p> : null}
                         </div>
                     </div>
-                    {extended? <div className='flex flex-col'>
+                    {extended ? <div className='flex flex-col'>
                         <p className='text-start mt-4'>Recent</p>
                         <div className='cursor-pointer inline-flex items-center text-gray-600 gap-2 mt-4 border-none rounded-2xl hover:bg-gray-400 p-2'>
                             <img className='w-[25px] ' src={assets.message_icon} alt="" />
                             <p>What is react ...</p>
                         </div>
-                    </div>:null}
-                   
+                    </div> : null}
+
                 </div>
 
 
                 <div className='flex flex-col '>
                     <div className='inline-flex items-center gap-2 border-none rounded-2xl hover:bg-gray-400 p-2 cursor-pointer'>
                         <img className='w-[25px]' src={assets.question_icon} alt="" />
-                       {extended?<p>Help </p>:null } 
+                        {extended ? <p>Help </p> : null}
                     </div>
                     <div className='inline-flex items-center gap-2 border-none rounded-2xl hover:bg-gray-400 p-2 cursor-pointer'>
                         <img className='w-[25px]' src={assets.history_icon} alt="" />
-                        {extended?<p>Activity </p>:null } 
+                        {extended ? <p>Activity </p> : null}
                     </div>
                     <div className='inline-flex items-center gap-2 border-none rounded-2xl hover:bg-gray-400 p-2 cursor-pointer'>
                         <img className='w-[25px]' src={assets.setting_icon} alt="" />
-                       {extended?<p>Seetings </p>:null } 
+                        {extended ? <p>Seetings </p> : null}
                     </div>
 
                 </div>

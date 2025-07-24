@@ -5,13 +5,13 @@ import Main from './Main';
 const Home = () => {
     return (
         <>
-        <div className='flex'>
-            
-            <Sidebar></Sidebar>
-            <Main></Main>
+            <div className='flex'>
 
-        </div>
-            
+                <Sidebar></Sidebar>
+                <Main></Main>
+
+            </div>
+
         </>
     );
 };
