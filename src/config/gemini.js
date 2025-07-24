@@ -20,14 +20,8 @@ async function runChat(prompt) {
             content: "You are an assistant that always responds in English. Never reply in any other language."
           },
           {
-            role: "system",
-           content: "You are a helpful assistant. Always reply in well-formatted English using bullet points, new lines, or markdown when appropriate.",
-          }
-          ,
-
-          {
             role: "user",
-            content: prompt
+            content: prompt,
           }
         ]
       })
@@ -46,6 +40,7 @@ async function runChat(prompt) {
 }
 
 export default runChat;
+
 
 
 
