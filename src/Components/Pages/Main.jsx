@@ -11,7 +11,7 @@ const Main = () => {
             {/* nav */}
          
             <div className="flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-8 py-4">
-                <p className="text-xl sm:text-2xl text-gray-600 font-semibold">Steller</p>
+                <p className="text-xl sm:text-2xl text-gray-600 font-semibold">StellerAI</p>
                 <img
                     className="w-8 sm:w-10 h-8 sm:h-10 rounded-full object-cover"
                     src={assets.user_icon}
